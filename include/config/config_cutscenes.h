@@ -21,5 +21,5 @@
 /**
  * Skips the File Select screen
  */
-// #define SKIP_FILE_SELECT
+#define SKIP_FILE_SELECT
 

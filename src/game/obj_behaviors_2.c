@@ -45,6 +45,8 @@
 #include "save_file.h"
 #include "seq_ids.h"
 #include "spawn_sound.h"
+#include "behaviors/Checkpoint_Flag.inc.c"
+
 
 //! TODO: remove static
 

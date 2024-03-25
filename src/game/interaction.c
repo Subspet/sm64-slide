@@ -729,27 +729,42 @@ void reset_mario_pitch(struct MarioState *m) {
     }
 }
 
-u32 interact_coin(struct MarioState *m, UNUSED u32 interactType, struct Object *obj) {
-    m->numCoins += obj->oDamageOrCoinValue;
-    m->healCounter += 4 * obj->oDamageOrCoinValue;
+u32 interact_coin(struct MarioState *m, UNUSED u32 interactType, struct Object *o) {
+    
+    if (o->behavior == segmented_to_virtual(bhvCheckpoint_Flag)) {
+        if (o->oInteractStatus != 2) {
+            if (o->oAnimState == 0) {
+                gWarpCheckpoint.actNum = gCurrActNum;
+                gWarpCheckpoint.courseNum = gCurrCourseNum;
+                gWarpCheckpoint.levelID = gCurrLevelNum;
+                gWarpCheckpoint.areaNum = BPARAM3;
+                gWarpCheckpoint.warpNode = BPARAM2;
+            }
+            o->oInteractStatus = INT_STATUS_INTERACTED;
+        } else {
+            o->oInteractStatus = 3;
+        }
+
+    } else {
+        m->numCoins += o->oDamageOrCoinValue;
+        m->healCounter += 4 * o->oDamageOrCoinValue;
 #ifdef BREATH_METER
-    m->breathCounter += (4 * obj->oDamageOrCoinValue);
+        m->breathCounter += (4 * o->oDamageOrCoinValue);
 #endif
-    obj->oInteractStatus = INT_STATUS_INTERACTED;
+        o->oInteractStatus = INT_STATUS_INTERACTED;
 
 #ifdef X_COIN_STAR
-    if (COURSE_IS_MAIN_COURSE(gCurrCourseNum) && m->numCoins - obj->oDamageOrCoinValue < X_COIN_STAR
-        && m->numCoins >= X_COIN_STAR && !g100CoinStarSpawned) {
-        bhv_spawn_star_no_level_exit(STAR_BP_ACT_100_COINS);
-        g100CoinStarSpawned = TRUE;
-    }
+        if (COURSE_IS_MAIN_COURSE(gCurrCourseNum) && m->numCoins - o->oDamageOrCoinValue < X_COIN_STAR
+            && m->numCoins >= X_COIN_STAR) {
+            bhv_spawn_star_no_level_exit(STAR_BP_ACT_100_COINS);
+        }
 #endif
 #if ENABLE_RUMBLE
-    if (obj->oDamageOrCoinValue >= 2) {
-        queue_rumble_data(5, 80);
-    }
+        if (obj->oDamageOrCoinValue >= 2) {
+            queue_rumble_data(5, 80);
+        }
 #endif
-
+    }
     return FALSE;
 }
 

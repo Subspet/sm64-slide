@@ -378,6 +378,7 @@ struct MacroPreset MacroObjectPresets[] = {
     {bhvYellowCoin,                     MODEL_YELLOW_COIN,                  0}, // macro_empty_362
     {bhvYellowCoin,                     MODEL_YELLOW_COIN,                  0}, // macro_empty_363
     {bhvYellowCoin,                     MODEL_YELLOW_COIN,                  0}, // macro_empty_364
+    {bhvFlipPanel,                      MODEL_FLIPPANEL,                    0}, // custom flip panel
 #ifdef FLOOMBAS
     {bhvYellowCoin,                     MODEL_YELLOW_COIN,                  0}, // macro_empty_365
     {bhvFloomba,                        MODEL_GOOMBA,                       GOOMBA_SIZE_REGULAR}, // macro_floomba

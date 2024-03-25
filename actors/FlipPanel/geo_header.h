@@ -1,0 +1,18 @@
+extern const GeoLayout FlipPanel_switch_opt1[];
+extern const GeoLayout FlipPanel_switch_opt2[];
+extern const GeoLayout FlipPanel_geo[];
+extern Lights1 FlipPanel_white_2_001_lights;
+extern Lights1 FlipPanel_white_001_lights;
+extern Lights1 FlipPanel_yellow_001_lights;
+extern Lights1 FlipPanel_red_001_lights;
+extern Vtx FlipPanel_geo_mesh_layer_1_vtx_0[4];
+extern Gfx FlipPanel_geo_mesh_layer_1_tri_0[];
+extern Vtx FlipPanel_geo_mesh_layer_1_vtx_1[36];
+extern Gfx FlipPanel_geo_mesh_layer_1_tri_1[];
+extern Gfx mat_FlipPanel_white_2_001[];
+extern Gfx mat_FlipPanel_white_001[];
+extern Gfx mat_FlipPanel_yellow_001[];
+extern Gfx mat_FlipPanel_red_001[];
+extern Gfx FlipPanel_geo_mesh_layer_1[];
+extern Gfx FlipPanel_geo_mesh_layer_1_mat_override_yellow_001_0[];
+extern Gfx FlipPanel_geo_mesh_layer_1_mat_override_red_001_1[];

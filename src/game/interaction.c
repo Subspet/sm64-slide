@@ -1279,6 +1279,10 @@ u32 interact_bully(struct MarioState *m, UNUSED u32 interactType, struct Object 
 }
 
 u32 interact_shock(struct MarioState *m, UNUSED u32 interactType, struct Object *obj) {
+    if(obj->behavior == segmented_to_virtual(bhvFlipPanel) && obj->oAnimState != 2) {
+        return FALSE;
+    }
+
     if (!sInvulnerable && !(m->flags & MARIO_VANISH_CAP)
         && !(obj->oInteractionSubtype & INT_SUBTYPE_DELAY_INVINCIBILITY)) {
         u32 actionArg = (m->action & (ACT_FLAG_AIR | ACT_FLAG_ON_POLE | ACT_FLAG_HANGING)) == 0;

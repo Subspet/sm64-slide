@@ -554,6 +554,8 @@ void bhv_volcano_trap_loop(void);
 void bhv_Checkpoint_Flag_init(void);
 void bhv_Checkpoint_Flag_loop(void);
 
+void bhv_FlipPanel_init(void);
+void bhv_FlipPanel_loop(void);
 
 Gfx *geo_move_mario_part_from_parent(s32 callContext, UNUSED struct GraphNode *node, Mat4 mtx);
 

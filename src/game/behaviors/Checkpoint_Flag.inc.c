@@ -6,7 +6,7 @@ static struct ObjectHitbox sFlag = {
     /* damageOrCoinValue: */ 0,
     /* health:            */ 0,
     /* numLootCoins:      */ 0,
-    /* radius:            */ 60,
+    /* radius:            */ 600,
     /* height:            */ 300,
     /* hurtboxRadius:     */ 90,
     /* hurtboxHeight:     */ 90,

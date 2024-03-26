@@ -6099,3 +6099,12 @@ const BehaviorScript bhvFlipPanel[] = {
         CALL_NATIVE(load_object_collision_model),
     END_LOOP(),
 };
+
+const BehaviorScript bhvLaser[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
+    CALL_NATIVE(bhv_laser_init),
+    BEGIN_LOOP(),
+        CALL_NATIVE(bhv_laser_loop),
+    END_LOOP(),
+};

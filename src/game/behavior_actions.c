@@ -62,6 +62,7 @@
 #include "behaviors/koopa_shell_underwater.inc.c"
 #include "behaviors/warp.inc.c"
 #include "behaviors/white_puff_explode.inc.c"
+#include "behaviors/laser.inc.c"
 
 // not in behavior file
 static struct SpawnParticlesInfo sMistParticles = {

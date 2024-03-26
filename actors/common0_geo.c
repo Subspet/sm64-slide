@@ -28,3 +28,4 @@
 #include "exclamation_box_outline/geo.inc.c"
 #include "koopa_shell/geo.inc.c"
 #include "FlipPanel/geo.inc.c"
+#include "laser/geo.inc.c"

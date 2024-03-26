@@ -83,3 +83,6 @@ UNUSED static const u64 binid_18 = 18;
 #include "actors/FlipPanel/model.inc.c"
 #include "actors/FlipPanel/collision.inc.c"
 UNUSED static const u64 binid_19 = 19;
+
+#include "actors/laser/model.inc.c"
+UNUSED static const u64 binid_20 = 20;

@@ -970,6 +970,10 @@ void update_hud_values(void) {
         gHudDisplay.breath = numBreathWedges;
         COND_BIT((gMarioState->breath > 0), gHudDisplay.flags, HUD_DISPLAY_FLAG_BREATH_METER);
 #endif
+        // enables delivery timer
+        if(gStartTimer > 0) {
+            gHudDisplay.flags |= HUD_DISPLAY_FLAG_SD64_TIMER;
+        }
     }
 }
 

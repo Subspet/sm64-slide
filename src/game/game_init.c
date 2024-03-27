@@ -31,6 +31,7 @@
 #include "vc_ultra.h"
 #include "profiling.h"
 #include "emutest.h"
+#include "ingame_menu.h"
 
 // Emulators that the Instant Input patch should not be applied to
 #define INSTANT_INPUT_BLACKLIST (EMU_CONSOLE | EMU_WIIVC | EMU_ARES | EMU_SIMPLE64 | EMU_CEN64)
@@ -76,6 +77,11 @@ struct DmaHandlerList gDemoInputsBuf;
 
 // General timer that runs as the game starts
 u32 gGlobalTimer = 0;
+
+u32 gStartTimer = 0;
+u32 gEndTimer = 0;
+Bool8 gTimerFinished = FALSE;
+
 u8 *gAreaSkyboxStart[AREA_COUNT];
 u8 *gAreaSkyboxEnd[AREA_COUNT];
 
@@ -428,6 +434,7 @@ void render_init(void) {
         sRenderingFramebuffer++;
     }
     gGlobalTimer++;
+    gEndTimer++;
 }
 
 /**
@@ -472,6 +479,9 @@ void display_and_vsync(void) {
         }
     }
     gGlobalTimer++;
+    if(!gTimerFinished && (gMenuMode == MENU_MODE_NONE)) {
+       gEndTimer++;
+    }
 }
 
 #if !defined(DISABLE_DEMO) && defined(KEEP_MARIO_HEAD)

@@ -626,9 +626,9 @@ void general_star_dance_handler(struct MarioState *m, s32 isInWater) {
                 break;
         }
     } else if (m->actionState == ACT_STATE_STAR_DANCE_DO_SAVE && gDialogResponse != DIALOG_RESPONSE_NONE) {
-        if (gDialogResponse == DIALOG_RESPONSE_YES) {
-            save_file_do_save(gCurrSaveFileNum - 1);
-        }
+        //if (gDialogResponse == DIALOG_RESPONSE_YES) {
+            //save_file_do_save(gCurrSaveFileNum - 1);
+        //}
         m->actionState = ACT_STATE_STAR_DANCE_RETURN;
     } else if (m->actionState == ACT_STATE_STAR_DANCE_RETURN && is_anim_at_end(m)) {
         disable_time_stop();

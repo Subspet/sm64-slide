@@ -79,6 +79,9 @@ extern u8 gDemoInputs[];
 
 extern u16 sRenderingFramebuffer;
 extern u32 gGlobalTimer;
+extern u32 gStartTimer; //CUSTOM TIMER START
+extern u32 gEndTimer; //CUSTOM TIMER END
+extern Bool8 gTimerFinished; // CUSTOM TIMER FLAG
 
 void setup_game_memory(void);
 void thread5_game_loop(UNUSED void *arg);

@@ -1095,7 +1095,7 @@ void handle_special_dialog_text(s16 dialogID) { // dialog ID tables, in order
     }
 }
 
-s16 gMenuMode = MENU_MODE_NONE;
+extern s16 gMenuMode = MENU_MODE_NONE;
 
 u8 gEndCutsceneStrEn0[] = { TEXT_FILE_MARIO_EXCLAMATION };
 u8 gEndCutsceneStrEn1[] = { TEXT_POWER_STARS_RESTORED };

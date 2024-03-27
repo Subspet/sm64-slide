@@ -35,7 +35,9 @@ enum HUDLUTs {
 #define HUD_LUT_DIFF HUD_LUT_GLOBAL
 #endif
 
-enum MenuMode {
+extern s16 gMenuMode;
+
+extern enum MenuMode {
     MENU_MODE_NONE = -1,
     MENU_MODE_UNUSED_0,
     MENU_MODE_RENDER_PAUSE_SCREEN,

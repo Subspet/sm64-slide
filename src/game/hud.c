@@ -485,6 +485,30 @@ void render_hud_timer(void) {
     gSPDisplayList(gDisplayListHead++, dl_hud_img_end);
 }
 
+
+/**
+ * CUSTOM TIMER FOR SPECIAL DELIVERY 64
+ */
+void render_hud_timer_sd64(void) {
+    Texture *(*hudLUT)[58] = segmented_to_virtual(&main_hud_lut);
+    u16 timerValFrames = gEndTimer - gStartTimer;
+    u16 timerMins = timerValFrames / (30 * 60);
+    u16 timerSecs = (timerValFrames - (timerMins * 1800)) / 30;
+    u16 timerFracSecs = ((timerValFrames - (timerMins * 1800) - (timerSecs * 30)) & 0xFFFF) / 3;
+
+    print_text(GFX_DIMENSIONS_RECT_FROM_RIGHT_EDGE(150), 185, "TIME");
+
+    print_text_fmt_int(GFX_DIMENSIONS_RECT_FROM_RIGHT_EDGE(91), 185, "%0d", timerMins);
+    print_text_fmt_int(GFX_DIMENSIONS_RECT_FROM_RIGHT_EDGE(71), 185, "%02d", timerSecs);
+    print_text_fmt_int(GFX_DIMENSIONS_RECT_FROM_RIGHT_EDGE(37), 185, "%d", timerFracSecs);
+
+    gSPDisplayList(gDisplayListHead++, dl_hud_img_begin);
+    render_hud_tex_lut(GFX_DIMENSIONS_RECT_FROM_RIGHT_EDGE(81), 32, (*hudLUT)[GLYPH_APOSTROPHE]);
+    render_hud_tex_lut(GFX_DIMENSIONS_RECT_FROM_RIGHT_EDGE(46), 32, (*hudLUT)[GLYPH_DOUBLE_QUOTE]);
+    gSPDisplayList(gDisplayListHead++, dl_hud_img_end);
+}
+
+
 /**
  * Sets HUD status camera value depending of the actions
  * defined in update_camera_status.
@@ -581,9 +605,9 @@ void render_hud(void) {
             render_hud_coins();
         }
 
-        if (hudDisplayFlags & HUD_DISPLAY_FLAG_STAR_COUNT) {
-            render_hud_stars();
-        }
+        //if (hudDisplayFlags & HUD_DISPLAY_FLAG_STAR_COUNT) {
+        //    render_hud_stars();
+        //}
 
         if (hudDisplayFlags & HUD_DISPLAY_FLAG_KEYS) {
             render_hud_keys();
@@ -606,6 +630,10 @@ void render_hud(void) {
 
         if (hudDisplayFlags & HUD_DISPLAY_FLAG_TIMER) {
             render_hud_timer();
+        }
+
+        if (hudDisplayFlags & HUD_DISPLAY_FLAG_SD64_TIMER) {
+            render_hud_timer_sd64();
         }
 
 #ifdef VANILLA_STYLE_CUSTOM_DEBUG

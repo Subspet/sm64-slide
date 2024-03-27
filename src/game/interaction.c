@@ -747,7 +747,7 @@ u32 interact_coin(struct MarioState *m, UNUSED u32 interactType, struct Object *
 
     } else {
         m->numCoins += o->oDamageOrCoinValue;
-        m->healCounter += 4 * o->oDamageOrCoinValue;
+        //m->healCounter += 4 * o->oDamageOrCoinValue;
 #ifdef BREATH_METER
         m->breathCounter += (4 * o->oDamageOrCoinValue);
 #endif
@@ -1935,11 +1935,13 @@ void mario_handle_special_floors(struct MarioState *m) {
                 break;
 
             case SURFACE_TIMER_START:
-                pss_begin_slide(m);
+                if(!gStartTimer > 0) {
+                    gStartTimer = gGlobalTimer;
+                }
                 break;
 
             case SURFACE_TIMER_END:
-                pss_end_slide(m);
+                gTimerFinished = TRUE;
                 break;
         }
 

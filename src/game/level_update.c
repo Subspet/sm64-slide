@@ -745,6 +745,8 @@ s16 level_trigger_warp(struct MarioState *m, s32 warpOp) {
                 sDelayedWarpTimer = 48;
                 if (gWarpCheckpoint.courseNum != COURSE_NONE && gSavedCourseNum == gLevelToCourseNumTable[(gCurrLevelNum) - 1]
                                                                                     && gWarpCheckpoint.actNum == gCurrActNum) {
+                    m->numCoins = (u16) (m->numCoins * 0.8);
+                    gHudDisplay.coins = m->numCoins;
                     sSourceWarpNodeId = gWarpCheckpoint.warpNode;
                 } else {
                     sSourceWarpNodeId = WARP_NODE_DEATH;
@@ -771,6 +773,8 @@ s16 level_trigger_warp(struct MarioState *m, s32 warpOp) {
 #else
                         if (gWarpCheckpoint.courseNum != COURSE_NONE && gSavedCourseNum == gLevelToCourseNumTable[(gCurrLevelNum) - 1]
                                                                                             && gWarpCheckpoint.actNum == gCurrActNum) {
+                            m->numCoins = (u16) (m->numCoins * 0.8);
+                            gHudDisplay.coins = m->numCoins;
                             sSourceWarpNodeId = gWarpCheckpoint.warpNode;
                         } else {
                             sSourceWarpNodeId = WARP_NODE_DEATH;

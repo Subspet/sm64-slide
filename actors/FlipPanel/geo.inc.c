@@ -1,3 +1,4 @@
+#include "src/game/envfx_snow.h"
 
 const GeoLayout FlipPanel_switch_opt1[] = {
 	GEO_NODE_START(),

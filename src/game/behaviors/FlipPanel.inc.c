@@ -6,10 +6,10 @@ static struct ObjectHitbox sPanNormalbox = {
     /* damageOrCoinValue: */ 4,
     /* health:            */ 0,
     /* numLootCoins:      */ 0,
-    /* radius:            */ 100,
-    /* height:            */ 100,
-    /* hurtboxRadius:     */ 90,
-    /* hurtboxHeight:     */ 90,
+    /* radius:            */ 4,
+    /* height:            */ 80,
+    /* hurtboxRadius:     */ 4,
+    /* hurtboxHeight:     */ 80,
 };
 
 void bhv_FlipPanel_init(void) {
@@ -25,11 +25,11 @@ void bhv_FlipPanel_loop(void) {
     o->oInteractStatus = 0;
 
 
-    if (o->oTimer % 180 == 0) {
+    if (o->oTimer % 90 == 0) {
         o->oAnimState = 0;
-    } else if (o->oTimer % 180 == 60) {
+    } else if (o->oTimer % 90 == 30) {
         o->oAnimState = 1;
-    } else if (o->oTimer % 180 == 120) {
+    } else if (o->oTimer % 90 == 60) {
         o->oAnimState = 2;
     } 
 };

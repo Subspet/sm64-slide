@@ -6,10 +6,10 @@ static struct ObjectHitbox slasbox = {
     /* damageOrCoinValue: */ 4,
     /* health:            */ 0,
     /* numLootCoins:      */ 0,
-    /* radius:            */ 80,
-    /* height:            */ 8000,
-    /* hurtboxRadius:     */ 90,
-    /* hurtboxHeight:     */ 9000,
+    /* radius:            */ 100,
+    /* height:            */ 1250,
+    /* hurtboxRadius:     */ 100,
+    /* hurtboxHeight:     */ 1250,
 };
 
 void bhv_laser_init(void) {
@@ -24,14 +24,14 @@ void bhv_laser_loop(void) {
     switch (GET_BPARAM1(o->oBehParams)) {
         case (0): // stationary
             break;
-        case (1): // x axis movement
-            o->oPosX = o->oHomeX - (0 - (300 * sins(o->oTimer * 800)));
+        case (1): // x axis movement 
+            o->oPosX = o->oHomeX - (0 - (800 * sins(o->oTimer * 1000)));
             break;
-        case (2): // z axis movement
-            o->oPosZ = o->oHomeZ - (0 - (300 * sins(o->oTimer * 800)));
+        case (2): // x axis movement opp
+            o->oPosX = o->oHomeX - (0 - (800 * -sins(o->oTimer * 1000)));
             break;
         case (3): // y axis movement UP/DOWN
-            o->oPosY = o->oHomeY - (0 - (300 * sins(o->oTimer * 800)));
+            o->oPosY = o->oHomeY - (0 - (800 * sins(o->oTimer * 1000)));
             break;
         case (4): // rotation
             o->oFaceAngleYaw += 0x800;

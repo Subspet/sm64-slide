@@ -1,3 +1,4 @@
+#include "src/game/envfx_snow.h"
 
 const GeoLayout laser_geo[] = {
 	GEO_NODE_START(),

@@ -2097,3 +2097,12 @@ Arrgghh!\n\
 Anyone entering this cave\n\
 without permission will\n\
 meet certain disaster."))
+
+DEFINE_DIALOG(DIALOG_170, 1, 4, 30, 200, _("\
+Hey what up my man?\n\
+That means you!\n\
+Dummy!\n\
+\n\
+You finished the\n\
+game yet?\n\
+Hurry up!"))

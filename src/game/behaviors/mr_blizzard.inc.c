@@ -4,7 +4,7 @@
 struct ObjectHitbox sMrBlizzardHitbox = {
     /* interactType:      */ INTERACT_MR_BLIZZARD,
     /* downOffset:        */ 24,
-    /* damageOrCoinValue: */ 2,
+    /* damageOrCoinValue: */ 4,
     /* health:            */ 99,
     /* numLootCoins:      */ 3,
     /* radius:            */ 65,
@@ -87,7 +87,7 @@ static void mr_blizzard_act_spawn_snowball(void) {
  * Handler for Mario entering or exiting Mr. Blizzard's range.
  */
 static void mr_blizzard_act_hide_unhide(void) {
-    if (o->oDistanceToMario < 1000.0f) {
+    if (o->oDistanceToMario < 3000.0f) {
         // If Mario is in range, move to rising action, make Mr. Blizzard visible,
         // make Mr. Blizzard tangible, and initialize GraphYVel.
         cur_obj_play_sound_2(SOUND_OBJ_SNOW_SAND2);
@@ -186,7 +186,7 @@ static void mr_blizzard_act_rotate(void) {
             o->prevObj = o->oMrBlizzardHeldObj = NULL;
         }
         // After 60 frames, if Mario is within 11.25 degrees of Mr. Blizzard, throw snowball action.
-        else if (o->oTimer > 60 && abs_angle_diff(o->oAngleToMario, o->oMoveAngleYaw) < 0x800) {
+        else if (o->oTimer > 0 && abs_angle_diff(o->oAngleToMario, o->oMoveAngleYaw) < 0x800) {
             o->oAction = MR_BLIZZARD_ACT_THROW_SNOWBALL;
         }
     }
@@ -416,7 +416,7 @@ static void mr_blizzard_snowball_act_1(void) {
 struct ObjectHitbox sMrBlizzardSnowballHitbox = {
     /* interactType:      */ INTERACT_MR_BLIZZARD,
     /* downOffset:        */ 12,
-    /* damageOrCoinValue: */ 1,
+    /* damageOrCoinValue: */ 3,
     /* health:            */ 99,
     /* numLootCoins:      */ 0,
     /* radius:            */ 30,

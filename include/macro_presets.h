@@ -380,6 +380,7 @@ struct MacroPreset MacroObjectPresets[] = {
     {bhvYellowCoin,                     MODEL_YELLOW_COIN,                  0}, // macro_empty_364
     {bhvFlipPanel,                      MODEL_FLIPPANEL,                    0}, // custom flip panel
     {bhvLaser,                          MODEL_LASER,                        0}, // custom laser
+    {bhvHLaser,                         MODEL_HLASER,                       0}, // custom hlaser
 #ifdef FLOOMBAS
     {bhvYellowCoin,                     MODEL_YELLOW_COIN,                  0}, // macro_empty_365
     {bhvFloomba,                        MODEL_GOOMBA,                       GOOMBA_SIZE_REGULAR}, // macro_floomba

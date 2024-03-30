@@ -6108,3 +6108,12 @@ const BehaviorScript bhvLaser[] = {
         CALL_NATIVE(bhv_laser_loop),
     END_LOOP(),
 };
+
+const BehaviorScript bhvHLaser[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
+    CALL_NATIVE(bhv_HLaser_init),
+    BEGIN_LOOP(),
+        CALL_NATIVE(bhv_HLaser_loop),
+    END_LOOP(),
+};

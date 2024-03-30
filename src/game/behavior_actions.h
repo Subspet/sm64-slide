@@ -560,6 +560,9 @@ void bhv_FlipPanel_loop(void);
 void bhv_laser_init(void);
 void bhv_laser_loop(void);
 
+void bhv_HLaser_init(void);
+void bhv_HLaser_loop(void);
+
 Gfx *geo_move_mario_part_from_parent(s32 callContext, UNUSED struct GraphNode *node, Mat4 mtx);
 
 // Bowser

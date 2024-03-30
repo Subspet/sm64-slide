@@ -86,3 +86,6 @@ UNUSED static const u64 binid_19 = 19;
 
 #include "actors/laser/model.inc.c"
 UNUSED static const u64 binid_20 = 20;
+
+#include "actors/HLaser/model.inc.c"
+UNUSED static const u64 binid_21 = 21;

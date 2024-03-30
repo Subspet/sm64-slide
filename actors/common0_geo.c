@@ -29,3 +29,4 @@
 #include "koopa_shell/geo.inc.c"
 #include "FlipPanel/geo.inc.c"
 #include "laser/geo.inc.c"
+#include "HLaser/geo.inc.c"

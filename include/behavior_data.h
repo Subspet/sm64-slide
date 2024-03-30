@@ -543,5 +543,6 @@ extern const BehaviorScript bhvUnusedFakeStar[];
 extern const BehaviorScript bhvCheckpoint_Flag[];
 extern const BehaviorScript bhvFlipPanel[];
 extern const BehaviorScript bhvLaser[];
+extern const BehaviorScript bhvHLaser[];
 
 #endif // BEHAVIOR_DATA_H

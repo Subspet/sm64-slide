@@ -12,25 +12,28 @@
 #define SCRAM "scram--"
 #endif
 
-DEFINE_DIALOG(DIALOG_000, 1, 6, 30, 200, _("\
-Wow! You're smack in the\n\
-middle of the battlefield.\n\
-You'll find the Power\n\
-Stars that Bowser stole\n\
-inside the painting\n\
-worlds.\n\
-First, talk to the\n\
-Bob-omb Buddy. (Press [B]\n\
-to talk.) He'll certainly\n\
-help you out, and so will\n\
-his " COMRADES " in other\n\
-areas.\n\
-To read signs, stop, face\n\
-them and press [B]. Press [A]\n\
-or [B] to scroll ahead. You\n\
-can talk to some other\n\
-characters by facing them\n\
-and pressing [B]."))
+DEFINE_DIALOG(DIALOG_000, 1, 3, 30, 200, _("\
+Did you really just\n\
+BLJ out of Mario's house?\n\
+Seriously?\n\
+We thought we could trust\n\
+you. We really did!\n\
+But NoooOOooooOOoo!\n\
+You just HAD to abuse\n\
+unintended game mechanics\n\
+NIMROD!\n\
+Miyamoto would be very\n\
+disappointed in you\n\
+right now. SHAME!\n\
+Caught red-handed.\n\
+That makes you a\n\
+B-Tier gamer. IDIOT!\n\
+We were going to disable\n\
+BLJs, but we decided\n\
+not to. BOZO!\n\
+And look where that got\n\
+us. Hope you're proud\n\
+of yourself. BONEHEAD!"))
 
 DEFINE_DIALOG(DIALOG_001, 1, 4, 95, 200, _("\
 Watch out! If you wander\n\
@@ -2099,10 +2102,91 @@ without permission will\n\
 meet certain disaster."))
 
 DEFINE_DIALOG(DIALOG_170, 1, 4, 30, 200, _("\
-Hey what up my man?\n\
-That means you!\n\
-Dummy!\n\
+Duuuuude, have you ever,\n\
+like considered what\n\
+U.P.P.I.E.S. even stands\n\
+for bro?\n\
+What's U.P.P.I.E.S.\n\
+you ask?\n\
 \n\
-You finished the\n\
-game yet?\n\
-Hurry up!"))
+\n\
+...\n\
+\n\
+\n\
+\n\
+Not much broseph,\n\
+what's U.P.P.I.E.S.\n\
+with you?\n\
+\n\
+Anyway, some big rock\n\
+dude keeps trying to \n\
+convince me it stands for\n\
+\n\
+United Princess Postal\n\
+Import Export Service,\n\
+but I think he's got\n\
+pebbles for brains."))
+
+DEFINE_DIALOG(DIALOG_171, 1, 5, 30, 200, _("\
+Wake up Mario!\n\
+It's your manager\n\
+T. Whomp.\n\
+\n\
+\n\
+We just got an order\n\
+from the Princess' Castle\n\
+marked as URGENT!!!\n\
+\n\
+\n\
+Mario, this is the\n\
+delivery of a lifetime,\n\
+and as the top performing\n\
+employee at U.P.P.I.E.S,\n\
+\n\
+you need to get down\n\
+to the post office\n\
+and deliver that package\n\
+as fast as possible!\n\
+\n\
+What? I don't care if\n\
+it's Sunday night and\n\
+U.P.P.I.E.S. employees\n\
+have the day off.\n\
+\n\
+This package is for\n\
+the princess and it\n\
+has to get there\n\
+TONIGHT!!!\n\
+\n\
+Oh, and by the way,\n\
+according to\n\
+U.P.P.I.E.S. policy,\n\
+I can't pay you for\n\
+this job...\n\
+But to make up for\n\
+it, whatever money\n\
+you find along the\n\
+way, feel free\n\
+to keep!\n\
+Now get to it!"))
+
+DEFINE_DIALOG(DIALOG_172, 1, 5, 30, 200, _("\
+So U.P.P.I.E.S.\n\
+management has sent\n\
+Mario to work\n\
+without pay again,\n\
+go figure...\n\
+Might as well make\n\
+the most out of\n\
+this adventure.\n\
+\n\
+\n\
+Collect as many\n\
+coins as you can,\n\
+or get to the end\n\
+of the slide as\n\
+fast as possible!\n\
+Maybe even go for\n\
+both! Or neither,\n\
+if you want to be\n\
+that kinda guy..."))

@@ -6,10 +6,10 @@ static struct ObjectHitbox sPanNormalbox = {
     /* damageOrCoinValue: */ 4,
     /* health:            */ 0,
     /* numLootCoins:      */ 0,
-    /* radius:            */ 4,
-    /* height:            */ 80,
-    /* hurtboxRadius:     */ 4,
-    /* hurtboxHeight:     */ 80,
+    /* radius:            */ 400,
+    /* height:            */ 150,
+    /* hurtboxRadius:     */ 400,
+    /* hurtboxHeight:     */ 150,
 };
 
 void bhv_FlipPanel_init(void) {

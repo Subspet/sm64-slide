@@ -2190,3 +2190,20 @@ Maybe even go for\n\
 both! Or neither,\n\
 if you want to be\n\
 that kinda guy..."))
+
+DEFINE_DIALOG(DIALOG_173, 1, 3, 30, 200, _("\
+-Manager Entrance-\n\
+Employees please\n\
+use other door."))
+
+DEFINE_DIALOG(DIALOG_174, 1, 4, 30, 200, _("\
+Jeez this Quicksnow\n\
+is so hard to clean\n\
+up! I just keep\n\
+sinking.\n\
+That snow on the\n\
+mountain though,\n\
+it'll swallow you\n\
+up instantly!\n\
+Be careful out\n\
+there."))

@@ -178,6 +178,13 @@ enum DialogId {
     DIALOG_172,
     DIALOG_173,
     DIALOG_174,
+    DIALOG_175,
+    DIALOG_176,
+    DIALOG_177,
+    DIALOG_178,
+    DIALOG_179,
+    DIALOG_180,
+    DIALOG_181,
     DIALOG_COUNT
 };
 

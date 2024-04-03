@@ -2207,3 +2207,121 @@ it'll swallow you\n\
 up instantly!\n\
 Be careful out\n\
 there."))
+
+DEFINE_DIALOG(DIALOG_175, 1, 4, 30, 200, _("\
+Hey Mario!\n\
+Please tell me\n\
+you have it!\n\
+\n\
+Oh thank goodness,\n\
+I'm saved!\n\
+\n\
+\n\
+I couldn't wait\n\
+until tomorrow to\n\
+play Special\n\
+Delivery 64!\n\
+I hear Miyamoto\n\
+really outdid\n\
+himself this time.\n\
+\n\
+You really are\n\
+a hero Mario!\n\
+\n\
+\n\
+As my thanks, you\n\
+can use the express\n\
+pipe to warp back\n\
+home extra fast!\n\
+Peach had it\n\
+installed in case\n\
+of emergency.\n\
+there."))
+
+DEFINE_DIALOG(DIALOG_176, 1, 4, 30, 200, _("\
+Thank you for\n\
+playing our hack!\n\
+\n\
+\n\
+This is our very\n\
+first one!\n\
+\n\
+\n\
+We tried to fit as\n\
+much as could in, but\n\
+sadly time caught up\n\
+with us. :(\n\
+Hope you enjoyed\n\
+what we could\n\
+smash together!\n\
+\n\
+-Solid Simp and\n\
+Subspet"))
+
+DEFINE_DIALOG(DIALOG_177, 1, 4, 30, 200, _("\
+Special thanks to\n\
+Deathray9000!\n\
+\n\
+\n\
+He graciously allowed\n\
+up to use a\n\
+checkpoint system\n\
+he designed.\n\
+Additionally, he walked\n\
+us through creating\n\
+custom objects and\n\
+assisted in DMs\n\
+Thank you so much!"))
+
+DEFINE_DIALOG(DIALOG_178, 1, 4, 30, 200, _("\
+Thanks to the\n\
+Romhacking.net\n\
+Discord Server\n\
+\n\
+Many helpful people\n\
+assisted us in\n\
+learning how to\n\
+create this hack.\n\
+Thanks to\n\
+someone2639 and\n\
+Poofca for Blender\n\
+assistance.\n\
+Thank you so much!"))
+
+DEFINE_DIALOG(DIALOG_179, 1, 4, 30, 200, _("\
+Thanks to Simpleflips\n\
+and the RomHacking.net\n\
+team for hosting\n\
+the competition.\n\
+Thanks to\n\
+PirateSoftware\n\
+for sponsoring the\n\
+competion\n\
+and encouraging\n\
+game devs everywhere."))
+
+DEFINE_DIALOG(DIALOG_180, 1, 2, 30, 200, _("\
+Shoutouts to\n\
+Simpleflips"))
+
+DEFINE_DIALOG(DIALOG_181, 1, 3, 30, 200, _("\
+So uh...\n\
+\n\
+\n\
+The end screen warp\n\
+is NOT happy.\n\
+\n\
+and it's 2am\n\
+with 1 hour till\n\
+the deadline.\n\
+So that's it\n\
+I guess!\n\
+Thaaanks!"))
+
+DEFINE_DIALOG(DIALOG_182, 1, 4, 30, 200, _("\
+U.P.P.I.E.S is\n\
+close for the\n\
+day. The door\n\
+is locked.\n\
+Maybe there's\n\
+another way in?"))

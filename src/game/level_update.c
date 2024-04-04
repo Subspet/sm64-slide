@@ -743,7 +743,7 @@ s16 level_trigger_warp(struct MarioState *m, s32 warpOp) {
                 }
 #endif
                 sDelayedWarpTimer = 48;
-                if (/*gWarpCheckpoint.courseNum != COURSE_NONE &&*/ gSavedCourseNum == gLevelToCourseNumTable[(gCurrLevelNum) - 1]
+                if (gWarpCheckpoint.courseNum != COURSE_NONE && gSavedCourseNum == gLevelToCourseNumTable[(gCurrLevelNum) - 1]
                                                                                     && gWarpCheckpoint.actNum == gCurrActNum) {
                     m->numCoins = (u16) (m->numCoins * 0.8);
                     gHudDisplay.coins = m->numCoins;
@@ -771,7 +771,7 @@ s16 level_trigger_warp(struct MarioState *m, s32 warpOp) {
                             sSourceWarpNodeId = WARP_NODE_DEATH;
                         }
 #else
-                        if (/*gWarpCheckpoint.courseNum != COURSE_NONE &&*/ gSavedCourseNum == gLevelToCourseNumTable[(gCurrLevelNum) - 1]
+                        if (gWarpCheckpoint.courseNum != COURSE_NONE && gSavedCourseNum == gLevelToCourseNumTable[(gCurrLevelNum) - 1]
                                                                                             && gWarpCheckpoint.actNum == gCurrActNum) {
                             m->numCoins = (u16) (m->numCoins * 0.8);
                             gHudDisplay.coins = m->numCoins;
@@ -1370,6 +1370,9 @@ s32 lvl_set_current_level(UNUSED s16 initOrUpdate, s32 levelNum) {
     sWarpCheckpointActive = FALSE;
     gCurrLevelNum = levelNum;
     gCurrCourseNum = gLevelToCourseNumTable[levelNum - 1];
+	if (gCurrLevelNum == LEVEL_SL) return 0;
+	if (gCurrLevelNum == LEVEL_BOB) return 0;
+	if (gCurrLevelNum == LEVEL_CCM) return 0;
 	if (gCurrLevelNum == LEVEL_CASTLE) return 0;
 
     if (gCurrDemoInput != NULL || gCurrCreditsEntry != NULL || gCurrCourseNum == COURSE_NONE) {

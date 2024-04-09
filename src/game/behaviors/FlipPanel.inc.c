@@ -3,7 +3,7 @@
 static struct ObjectHitbox sPanNormalbox = {
     /* interactType:      */ INTERACT_SHOCK,
     /* downOffset:        */ 0,
-    /* damageOrCoinValue: */ 4,
+    /* damageOrCoinValue: */ 2,
     /* health:            */ 0,
     /* numLootCoins:      */ 0,
     /* radius:            */ 400,

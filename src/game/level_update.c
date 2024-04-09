@@ -608,9 +608,9 @@ s16 music_unchanged_through_warp(s16 arg) {
  * Set the current warp type and destination level/area/node.
  */
 void initiate_warp(s16 destLevel, s16 destArea, s16 destWarpNode, s32 warpFlags) {
-    if (destWarpNode >= WARP_NODE_CREDITS_MIN) {
+    if (gMarioState->isDead == TRUE) {
         sWarpDest.type = WARP_TYPE_CHANGE_LEVEL;
-    } else if (warpFlags == WARP_FLAG_EXIT_COURSE) {
+    } else if (destWarpNode >= WARP_NODE_CREDITS_MIN) {
         sWarpDest.type = WARP_TYPE_CHANGE_LEVEL;
     } else if (destLevel != gCurrLevelNum) {
         sWarpDest.type = WARP_TYPE_CHANGE_LEVEL;
@@ -624,6 +624,14 @@ void initiate_warp(s16 destLevel, s16 destArea, s16 destWarpNode, s32 warpFlags)
     sWarpDest.areaIdx = destArea;
     sWarpDest.nodeId = destWarpNode;
     sWarpDest.arg = warpFlags;
+
+    //Checkpoint specific code
+    if (gMarioState->isDead && gWarpCheckpoint.levelID != NULL) {
+        sWarpDest.levelNum = gWarpCheckpoint.levelID;
+        sWarpDest.areaIdx = gWarpCheckpoint.areaNum;
+        sWarpDest.nodeId = gWarpCheckpoint.warpNode;
+    }
+
 #ifdef PUPPYCAM
     if (sWarpDest.type == WARP_TYPE_CHANGE_LEVEL)
     {
@@ -1370,6 +1378,7 @@ s32 lvl_set_current_level(UNUSED s16 initOrUpdate, s32 levelNum) {
     sWarpCheckpointActive = FALSE;
     gCurrLevelNum = levelNum;
     gCurrCourseNum = gLevelToCourseNumTable[levelNum - 1];
+	if (gCurrLevelNum == LEVEL_WF) return 0;
 	if (gCurrLevelNum == LEVEL_SL) return 0;
 	if (gCurrLevelNum == LEVEL_BOB) return 0;
 	if (gCurrLevelNum == LEVEL_CCM) return 0;

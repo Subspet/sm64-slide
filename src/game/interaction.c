@@ -1924,6 +1924,10 @@ void mario_handle_special_floors(struct MarioState *m) {
     if (m->floor != NULL) {
         s32 floorType = m->floor->type;
 
+        if (floorType == SURFACE_DEATH_PLANE && m->pos[1] < m->floorHeight + 2048.0f) {
+            m->isDead = TRUE;
+        }
+
         switch (floorType) {
             case SURFACE_DEATH_PLANE:
             case SURFACE_VERTICAL_WIND:

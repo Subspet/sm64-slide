@@ -25,11 +25,11 @@ void bhv_FlipPanel_loop(void) {
     o->oInteractStatus = 0;
 
 
-    if (o->oTimer % 90 == 0) {
+    if (o->oTimer % 180 == 0) {
         o->oAnimState = 0;
-    } else if (o->oTimer % 90 == 30) {
+    } else if (o->oTimer % 180 == 60) {
         o->oAnimState = 1;
-    } else if (o->oTimer % 90 == 60) {
+    } else if (o->oTimer % 180 == 120) {
         o->oAnimState = 2;
     } 
 };

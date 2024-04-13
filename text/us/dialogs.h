@@ -2320,7 +2320,7 @@ Thaaanks!"))
 
 DEFINE_DIALOG(DIALOG_182, 1, 4, 30, 200, _("\
 U.P.P.I.E.S is\n\
-close for the\n\
+closed for the\n\
 day. The door\n\
 is locked.\n\
 Maybe there's\n\

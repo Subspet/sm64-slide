@@ -608,9 +608,9 @@ s16 music_unchanged_through_warp(s16 arg) {
  * Set the current warp type and destination level/area/node.
  */
 void initiate_warp(s16 destLevel, s16 destArea, s16 destWarpNode, s32 warpFlags) {
-    if (gMarioState->isDead == TRUE) {
+    if (destWarpNode >= WARP_NODE_CREDITS_MIN) {
         sWarpDest.type = WARP_TYPE_CHANGE_LEVEL;
-    } else if (destWarpNode >= WARP_NODE_CREDITS_MIN) {
+    } else if (warpFlags == WARP_FLAG_EXIT_COURSE) {
         sWarpDest.type = WARP_TYPE_CHANGE_LEVEL;
     } else if (destLevel != gCurrLevelNum) {
         sWarpDest.type = WARP_TYPE_CHANGE_LEVEL;
@@ -751,10 +751,10 @@ s16 level_trigger_warp(struct MarioState *m, s32 warpOp) {
                 }
 #endif
                 sDelayedWarpTimer = 48;
+                m->numCoins = (u16) (m->numCoins * 0.8);
+                gHudDisplay.coins = m->numCoins;
                 if (gWarpCheckpoint.courseNum != COURSE_NONE && gSavedCourseNum == gLevelToCourseNumTable[(gCurrLevelNum) - 1]
                                                                                     && gWarpCheckpoint.actNum == gCurrActNum) {
-                    m->numCoins = (u16) (m->numCoins * 0.8);
-                    gHudDisplay.coins = m->numCoins;
                     sSourceWarpNodeId = gWarpCheckpoint.warpNode;
                 } else {
                     sSourceWarpNodeId = WARP_NODE_DEATH;
@@ -779,10 +779,10 @@ s16 level_trigger_warp(struct MarioState *m, s32 warpOp) {
                             sSourceWarpNodeId = WARP_NODE_DEATH;
                         }
 #else
+                        m->numCoins = (u16) (m->numCoins * 0.8);
+                        gHudDisplay.coins = m->numCoins;
                         if (gWarpCheckpoint.courseNum != COURSE_NONE && gSavedCourseNum == gLevelToCourseNumTable[(gCurrLevelNum) - 1]
                                                                                             && gWarpCheckpoint.actNum == gCurrActNum) {
-                            m->numCoins = (u16) (m->numCoins * 0.8);
-                            gHudDisplay.coins = m->numCoins;
                             sSourceWarpNodeId = gWarpCheckpoint.warpNode;
                         } else {
                             sSourceWarpNodeId = WARP_NODE_DEATH;

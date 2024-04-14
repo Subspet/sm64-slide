@@ -25,10 +25,10 @@ void bhv_HLaser_loop(void) {
         case (0): // stationary
             break;
         case (1): // y axis movement UP/DOWN
-            o->oPosY = o->oHomeY - (0 - (800 * sins(o->oTimer * 1000)));
+            o->oPosY = o->oHomeY - (0 - (400 * sins(o->oTimer * 600)));
             break;
-        case (2): // rotation
-            o->oFaceAngleYaw += 0x800;
+        case (2): // y axis movement UP/DOWN
+            o->oPosY = o->oHomeY - (0 - (400 * -sins(o->oTimer * 600)));
             break;
 		default:
             break;

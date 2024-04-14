@@ -25,16 +25,16 @@ void bhv_laser_loop(void) {
         case (0): // stationary
             break;
         case (1): // x axis movement 
-            o->oPosX = o->oHomeX - (0 - (800 * sins(o->oTimer * 1000)));
+            o->oPosX = o->oHomeX - (0 - (500 * sins(o->oTimer * 600)));
             break;
         case (2): // x axis movement opp
-            o->oPosX = o->oHomeX - (0 - (800 * -sins(o->oTimer * 1000)));
+            o->oPosX = o->oHomeX - (0 - (500 * -sins(o->oTimer * 600)));
             break;
         case (3): // z axis movement 
-            o->oPosZ = o->oHomeZ - (0 - (800 * sins(o->oTimer * 1000)));
+            o->oPosZ = o->oHomeZ - (0 - (500 * sins(o->oTimer * 600)));
             break;
         case (4): // z axis movement opp
-            o->oPosZ = o->oHomeZ - (0 - (800 * -sins(o->oTimer * 1000)));
+            o->oPosZ = o->oHomeZ - (0 - (500 * -sins(o->oTimer * 600)));
             break;
 		default:
             break;

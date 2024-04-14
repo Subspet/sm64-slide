@@ -1,12 +1,42 @@
+Lights1 wf_dl_gray_walls_lights = gdSPDefLights1(
+	0x7F, 0x7F, 0x7F,
+	0xFF, 0xFF, 0xFF, 0x49, 0x49, 0x49);
 
+Lights1 wf_dl_Timer_Start_lights = gdSPDefLights1(
+	0x7F, 0x7F, 0x7F,
+	0xFF, 0xFF, 0xFF, 0x49, 0x49, 0x49);
 
+Lights1 wf_dl_blue_walls_lights = gdSPDefLights1(
+	0x5D, 0x5D, 0x5D,
+	0xBE, 0xBE, 0xBE, 0x49, 0x49, 0x49);
 
+Lights1 wf_dl_goop_lights = gdSPDefLights1(
+	0x7F, 0x7F, 0x7F,
+	0xFF, 0xFF, 0xFF, 0x49, 0x49, 0x49);
 
+Lights1 wf_dl_InstantWarp_lights = gdSPDefLights1(
+	0x7F, 0x7F, 0x7F,
+	0xFF, 0xFF, 0xFF, 0x49, 0x49, 0x49);
 
+Lights1 wf_dl_f3dlite_material_001_lights = gdSPDefLights1(
+	0x7F, 0x7F, 0x71,
+	0xFE, 0xFF, 0xE4, 0x49, 0x49, 0x49);
 
+Lights1 wf_dl_walls_lights = gdSPDefLights1(
+	0x7F, 0x7F, 0x7F,
+	0xFF, 0xFF, 0xFF, 0x49, 0x49, 0x49);
 
+Lights1 wf_dl_InstantWarp_a2_lights = gdSPDefLights1(
+	0x7F, 0x7F, 0x7F,
+	0xFF, 0xFF, 0xFF, 0x49, 0x49, 0x49);
 
+Lights1 wf_dl_InstantWarp_001_lights = gdSPDefLights1(
+	0x7F, 0x7F, 0x7F,
+	0xFF, 0xFF, 0xFF, 0x49, 0x49, 0x49);
 
+Lights1 wf_dl_InstantWarp_a4_lights = gdSPDefLights1(
+	0x7F, 0x7F, 0x7F,
+	0xFF, 0xFF, 0xFF, 0x49, 0x49, 0x49);
 
 Gfx wf_dl_ventwalls_ci8_aligner[] = {gsSPEndDisplayList()};
 u8 wf_dl_ventwalls_ci8[] = {
@@ -2830,7 +2860,7 @@ Vtx wf_dl_Area_2_Mesh_mesh_layer_1_vtx_0[252] = {
 	{{ {-3190, 5440, 7678}, 0, {19342, 19213}, {0, 129, 0, 255} }},
 	{{ {-3190, 5440, 8878}, 0, {19342, 31501}, {0, 129, 0, 255} }},
 	{{ {-4390, 5440, 8878}, 0, {31630, 31501}, {0, 129, 0, 255} }},
-	{{ {-3190, 3011, 7678}, 0, {19342, 78605}, {0, 131, 234, 255} }},
+	{{ {-3205, 3011, 7678}, 0, {19342, 78605}, {0, 131, 234, 255} }},
 	{{ {-4390, 3011, 7678}, 0, {31630, 78605}, {0, 131, 234, 255} }},
 	{{ {-4381, 4888, -2970}, 0, {31537, -30428}, {0, 131, 234, 255} }},
 	{{ {-3181, 4888, -2970}, 0, {19249, -30428}, {0, 131, 234, 255} }},
@@ -2857,15 +2887,15 @@ Vtx wf_dl_Area_2_Mesh_mesh_layer_1_vtx_0[252] = {
 	{{ {-3209, 2002, 7678}, 0, {-29801, 31501}, {0, 0, 127, 255} }},
 	{{ {-2027, 1794, 7678}, 0, {-29801, 31501}, {0, 0, 127, 255} }},
 	{{ {-2009, 2791, 7678}, 0, {-29801, 31501}, {0, 0, 127, 255} }},
-	{{ {-3190, 2999, 7678}, 0, {-29801, 31501}, {0, 0, 127, 255} }},
+	{{ {-3205, 3011, 7678}, 0, {-29801, 31501}, {0, 0, 127, 255} }},
 	{{ {-2027, 1794, 8878}, 0, {-29801, 31501}, {0, 0, 129, 255} }},
 	{{ {-3209, 2002, 8878}, 0, {-29801, 31501}, {0, 0, 129, 255} }},
 	{{ {-3205, 2999, 8878}, 0, {-29801, 31501}, {0, 0, 129, 255} }},
 	{{ {-2009, 2791, 8878}, 0, {-29801, 31501}, {0, 0, 129, 255} }},
-	{{ {-3190, 2999, 7678}, 0, {-29801, 31501}, {234, 131, 0, 255} }},
-	{{ {-2009, 2791, 7678}, 0, {-29801, 31501}, {234, 131, 0, 255} }},
-	{{ {-2009, 2791, 8878}, 0, {-29801, 31501}, {234, 131, 0, 255} }},
-	{{ {-3205, 2999, 8878}, 0, {-29801, 31501}, {234, 131, 0, 255} }},
+	{{ {-3205, 3011, 7678}, 0, {-29801, 31501}, {234, 131, 255, 255} }},
+	{{ {-2009, 2791, 7678}, 0, {-29801, 31501}, {234, 131, 255, 255} }},
+	{{ {-2009, 2791, 8878}, 0, {-29801, 31501}, {234, 131, 255, 255} }},
+	{{ {-3205, 2999, 8878}, 0, {-29801, 31501}, {234, 131, 255, 255} }},
 };
 
 Gfx wf_dl_Area_2_Mesh_mesh_layer_1_tri_0[] = {
@@ -3295,18 +3325,18 @@ Vtx wf_dl_Area_2_Mesh_mesh_layer_1_vtx_1[300] = {
 	{{ {-3190, 5440, 7678}, 0, {19213, -30126}, {129, 1, 255, 255} }},
 	{{ {-3190, 4640, 7678}, 0, {19213, -21934}, {129, 1, 255, 255} }},
 	{{ {-3205, 4640, 8878}, 0, {31501, -21934}, {129, 1, 255, 255} }},
-	{{ {-3190, 3011, 7678}, 0, {-18350, -13438}, {0, 0, 127, 255} }},
+	{{ {-3205, 3011, 7678}, 0, {-18350, -13438}, {0, 0, 127, 255} }},
 	{{ {-3190, 4640, 7678}, 0, {-18350, -30126}, {0, 0, 127, 255} }},
 	{{ {-4390, 4640, 7678}, 0, {-30638, -30126}, {0, 0, 127, 255} }},
 	{{ {-4390, 3011, 7678}, 0, {-30638, -13438}, {0, 0, 127, 255} }},
-	{{ {-3190, 2999, 7678}, 0, {19213, -13319}, {129, 0, 254, 255} }},
-	{{ {-3205, 2999, 8878}, 0, {31501, -13319}, {129, 0, 254, 255} }},
-	{{ {-3205, 4640, 8878}, 0, {31501, -30126}, {129, 0, 254, 255} }},
-	{{ {-3190, 4640, 7678}, 0, {19213, -30126}, {129, 0, 254, 255} }},
-	{{ {-3190, 3011, 7678}, 0, {31501, -11390}, {129, 1, 0, 255} }},
-	{{ {-3181, 4888, -2970}, 0, {-77532, -30615}, {129, 1, 0, 255} }},
-	{{ {-3181, 4088, -2970}, 0, {-77532, -22423}, {129, 1, 0, 255} }},
-	{{ {-3205, 2200, 7678}, 0, {31501, -3198}, {129, 1, 0, 255} }},
+	{{ {-3205, 3011, 7678}, 0, {19213, -13319}, {129, 1, 255, 255} }},
+	{{ {-3205, 2999, 8878}, 0, {31501, -13319}, {129, 1, 255, 255} }},
+	{{ {-3205, 4640, 8878}, 0, {31501, -30126}, {129, 1, 255, 255} }},
+	{{ {-3190, 4640, 7678}, 0, {19213, -30126}, {129, 1, 255, 255} }},
+	{{ {-3205, 3011, 7678}, 0, {31501, -11390}, {129, 0, 0, 255} }},
+	{{ {-3181, 4888, -2970}, 0, {-77532, -30615}, {129, 0, 0, 255} }},
+	{{ {-3181, 4088, -2970}, 0, {-77532, -22423}, {129, 0, 0, 255} }},
+	{{ {-3205, 2200, 7678}, 0, {31501, -3198}, {129, 0, 0, 255} }},
 	{{ {-4381, 4888, -2970}, 0, {31420, -30615}, {127, 0, 0, 255} }},
 	{{ {-4390, 3011, 7678}, 0, {-77613, -11390}, {127, 0, 0, 255} }},
 	{{ {-4390, 2211, 7678}, 0, {-77613, -3198}, {127, 0, 0, 255} }},
@@ -6731,8 +6761,7 @@ Gfx mat_wf_dl_gray_walls[] = {
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT),
 	gsDPSetTextureLUT(G_TT_RGBA16),
 	gsSPTexture(65535, 65535, 0, 0, 1),
-    gsSPLightColor(LIGHT_1, 0xffffffff),
-    gsSPLightColor(LIGHT_2, 0x7f7f7fff),
+	gsSPSetLights1(wf_dl_gray_walls_lights),
 	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, wf_dl_ventwalls_pal_rgba16),
 	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadTLUTCmd(5, 32),
@@ -6755,8 +6784,7 @@ Gfx mat_wf_dl_Timer_Start[] = {
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT),
 	gsDPSetTextureLUT(G_TT_RGBA16),
 	gsSPTexture(65535, 65535, 0, 0, 1),
-    gsSPLightColor(LIGHT_1, 0xffffffff),
-    gsSPLightColor(LIGHT_2, 0x7f7f7fff),
+	gsSPSetLights1(wf_dl_Timer_Start_lights),
 	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, wf_dl_metal_pal_rgba16),
 	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadTLUTCmd(5, 32),
@@ -6779,8 +6807,7 @@ Gfx mat_wf_dl_blue_walls[] = {
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT),
 	gsDPSetTextureLUT(G_TT_RGBA16),
 	gsSPTexture(65535, 65535, 0, 0, 1),
-    gsSPLightColor(LIGHT_1, 0xbebebeff),
-    gsSPLightColor(LIGHT_2, 0x5d5d5dff),
+	gsSPSetLights1(wf_dl_blue_walls_lights),
 	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, wf_dl_metal3_pal_rgba16),
 	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadTLUTCmd(5, 121),
@@ -6803,8 +6830,7 @@ Gfx mat_wf_dl_goop[] = {
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT),
 	gsDPSetTextureLUT(G_TT_RGBA16),
 	gsSPTexture(65535, 65535, 0, 0, 1),
-    gsSPLightColor(LIGHT_1, 0xffffffff),
-    gsSPLightColor(LIGHT_2, 0x7f7f7fff),
+	gsSPSetLights1(wf_dl_goop_lights),
 	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, wf_dl_goop_pal_rgba16),
 	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadTLUTCmd(5, 174),
@@ -6827,8 +6853,7 @@ Gfx mat_wf_dl_InstantWarp[] = {
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT),
 	gsDPSetTextureLUT(G_TT_RGBA16),
 	gsSPTexture(65535, 65535, 0, 0, 1),
-    gsSPLightColor(LIGHT_1, 0xffffffff),
-    gsSPLightColor(LIGHT_2, 0x7f7f7fff),
+	gsSPSetLights1(wf_dl_InstantWarp_lights),
 	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, wf_dl_metal_pal_rgba16),
 	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadTLUTCmd(5, 32),
@@ -6850,8 +6875,7 @@ Gfx mat_wf_dl_f3dlite_material_001[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(0, 0, 0, SHADE, 0, 0, 0, 0, 0, 0, 0, SHADE, 0, 0, 0, 0),
 	gsSPTexture(65535, 65535, 0, 0, 1),
-    gsSPLightColor(LIGHT_1, 0xfeffe4ff),
-    gsSPLightColor(LIGHT_2, 0x7f7f71ff),
+	gsSPSetLights1(wf_dl_f3dlite_material_001_lights),
 	gsSPEndDisplayList(),
 };
 
@@ -6860,8 +6884,7 @@ Gfx mat_wf_dl_walls[] = {
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT),
 	gsDPSetTextureLUT(G_TT_RGBA16),
 	gsSPTexture(65535, 65535, 0, 0, 1),
-    gsSPLightColor(LIGHT_1, 0xffffffff),
-    gsSPLightColor(LIGHT_2, 0x7f7f7fff),
+	gsSPSetLights1(wf_dl_walls_lights),
 	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, wf_dl_metal3_pal_rgba16),
 	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadTLUTCmd(5, 121),
@@ -6884,8 +6907,7 @@ Gfx mat_wf_dl_InstantWarp_a2[] = {
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT),
 	gsDPSetTextureLUT(G_TT_RGBA16),
 	gsSPTexture(65535, 65535, 0, 0, 1),
-    gsSPLightColor(LIGHT_1, 0xffffffff),
-    gsSPLightColor(LIGHT_2, 0x7f7f7fff),
+	gsSPSetLights1(wf_dl_InstantWarp_a2_lights),
 	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, wf_dl_metal_pal_rgba16),
 	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadTLUTCmd(5, 32),
@@ -6908,8 +6930,7 @@ Gfx mat_wf_dl_InstantWarp_001[] = {
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT),
 	gsDPSetTextureLUT(G_TT_RGBA16),
 	gsSPTexture(65535, 65535, 0, 0, 1),
-    gsSPLightColor(LIGHT_1, 0xffffffff),
-    gsSPLightColor(LIGHT_2, 0x7f7f7fff),
+	gsSPSetLights1(wf_dl_InstantWarp_001_lights),
 	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, wf_dl_metal_pal_rgba16),
 	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadTLUTCmd(5, 32),
@@ -6932,8 +6953,7 @@ Gfx mat_wf_dl_InstantWarp_a4[] = {
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT),
 	gsDPSetTextureLUT(G_TT_RGBA16),
 	gsSPTexture(65535, 65535, 0, 0, 1),
-    gsSPLightColor(LIGHT_1, 0xffffffff),
-    gsSPLightColor(LIGHT_2, 0x7f7f7fff),
+	gsSPSetLights1(wf_dl_InstantWarp_a4_lights),
 	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, wf_dl_metal_pal_rgba16),
 	gsDPSetTile(0, 0, 0, 256, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadTLUTCmd(5, 32),

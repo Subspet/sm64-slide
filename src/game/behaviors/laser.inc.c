@@ -36,6 +36,18 @@ void bhv_laser_loop(void) {
         case (4): // z axis movement opp
             o->oPosZ = o->oHomeZ - (0 - (500 * -sins(o->oTimer * 600)));
             break;
+        case (5): // x axis movement fast
+            o->oPosX = o->oHomeX - (0 - (500 * sins(o->oTimer * 900)));
+            break;
+        case (6): // x axis movement opp fast
+            o->oPosX = o->oHomeX - (0 - (500 * -sins(o->oTimer * 900)));
+            break;
+        case (7): // x axis movement faster
+            o->oPosX = o->oHomeX - (0 - (500 * sins(o->oTimer * 1200)));
+            break;
+        case (8): // x axis movement opp faster
+            o->oPosX = o->oHomeX - (0 - (500 * -sins(o->oTimer * 1200)));
+            break;
 		default:
             break;
     }

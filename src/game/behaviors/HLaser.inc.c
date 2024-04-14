@@ -7,9 +7,9 @@ static struct ObjectHitbox hlasbox = {
     /* health:            */ 0,
     /* numLootCoins:      */ 0,
     /* radius:            */ 100,
-    /* height:            */ 200,
+    /* height:            */ 120,
     /* hurtboxRadius:     */ 100,
-    /* hurtboxHeight:     */ 200,
+    /* hurtboxHeight:     */ 120,
 };
 
 void bhv_HLaser_init(void) {

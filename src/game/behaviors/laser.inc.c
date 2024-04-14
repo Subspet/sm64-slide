@@ -3,7 +3,7 @@
 static struct ObjectHitbox slasbox = {
     /* interactType:      */ INTERACT_SHOCK,
     /* downOffset:        */ 0,
-    /* damageOrCoinValue: */ 3,
+    /* damageOrCoinValue: */ 2,
     /* health:            */ 0,
     /* numLootCoins:      */ 0,
     /* radius:            */ 125,
@@ -42,11 +42,17 @@ void bhv_laser_loop(void) {
         case (6): // x axis movement opp fast
             o->oPosX = o->oHomeX - (0 - (500 * -sins(o->oTimer * 900)));
             break;
-        case (7): // x axis movement faster
-            o->oPosX = o->oHomeX - (0 - (500 * sins(o->oTimer * 1200)));
+        case (7): // z axis movement fast
+            o->oPosZ = o->oHomeZ - (0 - (500 * sins(o->oTimer * 900)));
             break;
-        case (8): // x axis movement opp faster
-            o->oPosX = o->oHomeX - (0 - (500 * -sins(o->oTimer * 1200)));
+        case (8): // z axis movement opp fast
+            o->oPosZ = o->oHomeZ - (0 - (500 * -sins(o->oTimer * 900)));
+            break;
+        case (9): // z axis movement faster
+            o->oPosZ = o->oHomeZ - (0 - (500 * sins(o->oTimer * 1200)));
+            break;
+        case (10): // z axis movement opp faster
+            o->oPosZ = o->oHomeZ - (0 - (500 * -sins(o->oTimer * 1200)));
             break;
 		default:
             break;

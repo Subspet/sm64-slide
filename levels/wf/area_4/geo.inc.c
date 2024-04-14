@@ -5,7 +5,7 @@ const GeoLayout wf_area_4_geo[] = {
 	GEO_OPEN_NODE(),
 		GEO_TRANSLATE_NODE(LAYER_OPAQUE, 15267, 6826, -298),
 		GEO_TRANSLATE_NODE(LAYER_OPAQUE, -13165, 1921, -898),
-		GEO_ROTATION_NODE_WITH_DL(LAYER_OPAQUE, -90, 0, 0, wf_dl_Area_4_Mesh_mesh_layer_1),
+		GEO_DISPLAY_LIST(LAYER_OPAQUE, wf_dl_Area_4_Mesh_mesh_layer_1),
 		GEO_TRANSLATE_NODE_WITH_DL(LAYER_TRANSPARENT, 28, -10001, -37, wf_dl_Death_Plane_4_mesh_layer_5),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),

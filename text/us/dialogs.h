@@ -2241,16 +2241,20 @@ there."))
 DEFINE_DIALOG(DIALOG_176, 1, 4, 30, 200, _("\
 Thank you for\n\
 playing our hack!\n\
-\n\
-\n\
 This is our very\n\
 first one!\n\
-\n\
-\n\
 We tried to fit as\n\
-much as could in, but\n\
-sadly time caught up\n\
-with us. :(\n\
+much as  we could\n\
+manage.\n\
+\n\
+Though we came\n\
+across many issues,\n\
+we greatly enjoyed\n\
+learning how to\n\
+use Decomp and\n\
+Blender for the\n\
+first time.\n\
+\n\
 Hope you enjoyed\n\
 what we could\n\
 smash together!\n\
@@ -2325,3 +2329,50 @@ day. The door\n\
 is locked.\n\
 Maybe there's\n\
 another way in?"))
+
+DEFINE_DIALOG(DIALOG_183, 1, 3, 30, 200, _("\
+Stand on Mario's\n\
+bed to end the\n\
+game.\n\
+Have a good\n\
+night!"))
+
+DEFINE_DIALOG(DIALOG_184, 1, 3, 30, 200, _("\
+Don't even\n\
+think\n\
+about it."))
+
+DEFINE_DIALOG(DIALOG_185, 1, 5, 30, 200, _("\
+Mario, don't tell\n\
+me you seriously\n\
+thought that the\n\
+front door would\n\
+be open.\n\
+U.P.P.I.E.S. is\n\
+closed, remember?\n\
+Maybe you could\n\
+try sneaking in\n\
+through the roof?"))
+
+DEFINE_DIALOG(DIALOG_186, 1, 3, 30, 200, _("\
+Mario, I just got\n\
+an alert on my\n\
+phone that some\n\
+idiot is trying\n\
+to break into MY\n\
+post office!\n\
+Don't Worry though,\n\
+I installed my very\n\
+own security system!\n\
+(patent pending)\n\
+\n\
+\n\
+That ruffian will\n\
+have to get through\n\
+my gauntlet if he\n\
+wants to steal our\n\
+packages.\n\
+\n\
+Now get that\n\
+package to\n\
+the castle!!!"))

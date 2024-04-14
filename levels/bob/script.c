@@ -54,6 +54,7 @@ const LevelScript level_bob_entry[] = {
 		WARP_NODE(0x11, LEVEL_SL, 0x01, 0x12, WARP_NO_CHECKPOINT),
 		WARP_NODE(0x12, LEVEL_BOB, 0x01, 0x12, WARP_NO_CHECKPOINT),
 		OBJECT(MODEL_CCM_CABIN_DOOR_GLOBAL, -2, 0, -600, 0, -180, 0, (0x11 << 16), bhvDoorWarp),
+		OBJECT(MODEL_WOODEN_SIGNPOST, 78, 700, 553, 0, 90, 0, (184 << 16), bhvMessagePanel),
 		OBJECT(MODEL_WOODEN_SIGNPOST, -332, 6, -274, 0, 90, 0, (172 << 16), bhvMessagePanel),
 		OBJECT(MODEL_WOODEN_SIGNPOST, 191, 6, 696, 0, 0, 0, (171 << 16), bhvMessagePanel),
 		OBJECT(MODEL_NONE, 0, 213, 0, 0, 0, 0, 0x000A0000, bhvAirborneWarp),

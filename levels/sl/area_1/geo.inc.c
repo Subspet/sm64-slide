@@ -8,6 +8,8 @@ const GeoLayout sl_area_1_geo[] = {
 		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, -7725, 3726, 1004, 0, -90, 0, sl_dl_mario_house_mesh_layer_1),
 		GEO_TRANSLATE_NODE_WITH_DL(LAYER_OPAQUE, -3043, 3065, -1603, sl_dl_Mountain_Mesh_mesh_layer_1),
 		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, -1677, 4210, 782, 0, -180, 0, sl_dl_Post_Office_mesh_layer_1),
+		GEO_TRANSLATE_NODE(LAYER_OPAQUE, -4736, 3065, -1603),
+		GEO_TRANSLATE_NODE(LAYER_OPAQUE, -4736, 3065, 3948),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };

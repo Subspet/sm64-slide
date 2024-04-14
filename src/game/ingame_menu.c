@@ -1591,7 +1591,7 @@ void render_widescreen_setting(void) {
 #endif
 
 void render_pause_my_score_coins(void) {
-    u8 textCourse[] = { TEXT_COURSE };
+    //u8 textCourse[] = { TEXT_COURSE };
     u8 textMyScore[] = { TEXT_MY_SCORE };
     u8 textStar[] = { TEXT_STAR };
     u8 textUnfilledStar[] = { TEXT_UNFILLED_STAR };
@@ -1625,9 +1625,9 @@ void render_pause_my_score_coins(void) {
     u8 *courseName = segmented_to_virtual(courseNameTbl[courseIndex]);
 
     if (courseIndex <= COURSE_NUM_TO_INDEX(COURSE_STAGES_MAX)) {
-        print_generic_string(TXT_COURSE_X, 157, LANGUAGE_ARRAY(textCourse));
-        int_to_str(gCurrCourseNum, strCourseNum);
-        print_generic_string(CRS_NUM_X1, 157, strCourseNum);
+        //print_generic_string(TXT_COURSE_X, 157, LANGUAGE_ARRAY(textCourse));
+        //int_to_str(gCurrCourseNum, strCourseNum);
+        //print_generic_string(CRS_NUM_X1, 157, strCourseNum);
 
         u8 *actName = segmented_to_virtual(actNameTbl[COURSE_NUM_TO_INDEX(gCurrCourseNum) * 6 + gDialogCourseActNum - 1]);
 

@@ -294,12 +294,13 @@ This key doesn't fit!\n\
 Maybe it's for the\n\
 basement..."))
 
-DEFINE_DIALOG(DIALOG_024, 1, 5, 95, 200, _("\
-You need Star power to\n\
-open this door. Recover a\n\
-Power Star from an enemy\n\
-inside one of the castle's\n\
-paintings."))
+DEFINE_DIALOG(DIALOG_024, 1, 4, 95, 200, _("\
+U.P.P.I.E.S is\n\
+closed for the\n\
+day. The door\n\
+is locked.\n\
+Maybe there's\n\
+another way in?"))
 
 DEFINE_DIALOG(DIALOG_025, 1, 4, 95, 200, _("\
 It takes the power of\n\
@@ -2952,3 +2953,24 @@ I breathe a real sigh\n\
 of relief once I talk\n\
 to the package recipient\n\
 and the timer stops."))
+
+DEFINE_DIALOG(DIALOG_191, 1, 3, 30, 200, _("\
+I think Shroomart\n\
+forgot to label\n\
+this one..."))
+
+DEFINE_DIALOG(DIALOG_192, 1, 2, 30, 200, _("\
+We eatin' good\n\
+tonight baby!"))
+
+DEFINE_DIALOG(DIALOG_193, 1, 3, 30, 200, _("\
+I have been stuck\n\
+here for THREE\n\
+weeks!\n\
+Please send help.\n\
+You'll do that\n\
+right?\n\
+Right?\n\
+\n\
+\n\
+Please?"))

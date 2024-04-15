@@ -28,9 +28,6 @@ right now. SHAME!\n\
 Caught red-handed.\n\
 That makes you a\n\
 B-Tier gamer. IDIOT!\n\
-We were going to disable\n\
-BLJs, but we decided\n\
-not to. BOZO!\n\
 And look where that got\n\
 us. Hope you're proud\n\
 of yourself. BONEHEAD!"))
@@ -2235,8 +2232,7 @@ pipe to warp back\n\
 home extra fast!\n\
 Peach had it\n\
 installed in case\n\
-of emergency.\n\
-there."))
+of emergency."))
 
 DEFINE_DIALOG(DIALOG_176, 1, 4, 30, 200, _("\
 Thank you for\n\
@@ -2804,7 +2800,7 @@ Shroomart!\n\
 \n\
 which is\n\
 pretty poggers\n\
-\n\
+ngl\n\
 \n\
 if i do\n\
 say say\n\

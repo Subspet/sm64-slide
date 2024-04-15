@@ -60,7 +60,7 @@ const LevelScript level_sl_entry[] = {
 		WARP_NODE(0x14, LEVEL_SL, 0x01, 0x14, WARP_NO_CHECKPOINT),
 		INSTANT_WARP(0x00, 0x01, 0, 0, -5551),
 		INSTANT_WARP(0x01, 0x01, 0, 0, 5551),
-		OBJECT(MODEL_WOODEN_SIGNPOST, -2331, 3065, 1069, 0, -90, 0, (182 << 16), bhvMessagePanel),
+		OBJECT(MODEL_WOODEN_SIGNPOST, -2331, 3065, 730, 0, -90, 0, (182 << 16), bhvMessagePanel),
 		OBJECT(MODEL_NONE, -9076, 3282, 1292, 0, 0, 0, (0 << 16), bhvCoinFormation),
 		OBJECT(MODEL_NONE, -8489, 3327, 2991, 0, 0, 0, (2 << 16), bhvCoinFormation),
 		OBJECT(MODEL_NONE, -8426, 3333, -832, 0, 0, 0, (2 << 16), bhvCoinFormation),

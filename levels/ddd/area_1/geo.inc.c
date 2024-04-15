@@ -4,6 +4,8 @@ const GeoLayout ddd_area_1_geo[] = {
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
 		GEO_TRANSLATE_NODE_WITH_DL(LAYER_TRANSPARENT, 28, -10773, -37, ddd_dl_Death_Plane_Area_1_mesh_layer_5),
+		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, 90, -223, -42, 0, 121, 0, ddd_dl_Kelpo_Bowl_mesh_layer_1),
+		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, 96, -153, -157, 0, 45, 0, ddd_dl_Kelpo_Box_mesh_layer_1),
 		GEO_TRANSLATE_NODE_WITH_DL(LAYER_OPAQUE, -322, 376, 367, ddd_dl_Main_Mesh_NEW_mesh_layer_1),
 		GEO_OPEN_NODE(),
 			GEO_DISPLAY_LIST(LAYER_TRANSPARENT, ddd_dl_Main_Mesh_NEW_mesh_layer_5),

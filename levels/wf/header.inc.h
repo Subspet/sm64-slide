@@ -55,7 +55,7 @@ extern Vtx wf_dl_Death_Plane_1_mesh_layer_5_vtx_0[4];
 extern Gfx wf_dl_Death_Plane_1_mesh_layer_5_tri_0[];
 extern Vtx wf_dl_Area_2_Mesh_mesh_layer_1_vtx_0[408];
 extern Gfx wf_dl_Area_2_Mesh_mesh_layer_1_tri_0[];
-extern Vtx wf_dl_Area_2_Mesh_mesh_layer_1_vtx_1[374];
+extern Vtx wf_dl_Area_2_Mesh_mesh_layer_1_vtx_1[371];
 extern Gfx wf_dl_Area_2_Mesh_mesh_layer_1_tri_1[];
 extern Vtx wf_dl_Area_2_Mesh_mesh_layer_1_vtx_2[32];
 extern Gfx wf_dl_Area_2_Mesh_mesh_layer_1_tri_2[];

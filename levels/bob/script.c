@@ -56,7 +56,7 @@ const LevelScript level_bob_entry[] = {
 		OBJECT(MODEL_CCM_CABIN_DOOR_GLOBAL, -2, 0, -600, 0, -180, 0, (0x11 << 16), bhvDoorWarp),
 		OBJECT(MODEL_WOODEN_SIGNPOST, 78, 700, 553, 0, 90, 0, (184 << 16), bhvMessagePanel),
 		OBJECT(MODEL_WOODEN_SIGNPOST, -332, 6, -274, 0, 90, 0, (172 << 16), bhvMessagePanel),
-		OBJECT(MODEL_WOODEN_SIGNPOST, 191, 6, 696, 0, 0, 0, (171 << 16), bhvMessagePanel),
+		OBJECT(MODEL_TOAD, 191, 6, 779, 0, 0, 0, (188 << 24), bhvToadMessage),
 		OBJECT(MODEL_NONE, 0, 213, 0, 0, 0, 0, 0x000A0000, bhvAirborneWarp),
 		MARIO_POS(0x01, 0, 47, 235, 1020),
 		TERRAIN(bob_area_1_collision),

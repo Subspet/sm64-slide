@@ -2244,7 +2244,7 @@ playing our hack!\n\
 This is our very\n\
 first one!\n\
 We tried to fit as\n\
-much as  we could\n\
+much as we could\n\
 manage.\n\
 \n\
 Though we came\n\
@@ -2274,12 +2274,12 @@ he designed.\n\
 Additionally, he walked\n\
 us through creating\n\
 custom objects and\n\
-assisted in DMs\n\
+assisted in DMs.\n\
 Thank you so much!"))
 
 DEFINE_DIALOG(DIALOG_178, 1, 4, 30, 200, _("\
 Thanks to the\n\
-Romhacking.net\n\
+Romhacking.com\n\
 Discord Server\n\
 \n\
 Many helpful people\n\
@@ -2294,13 +2294,13 @@ Thank you so much!"))
 
 DEFINE_DIALOG(DIALOG_179, 1, 4, 30, 200, _("\
 Thanks to Simpleflips\n\
-and the RomHacking.net\n\
+and the RomHacking.com\n\
 team for hosting\n\
 the competition.\n\
 Thanks to\n\
 PirateSoftware\n\
 for sponsoring the\n\
-competion\n\
+competition\n\
 and encouraging\n\
 game devs everywhere."))
 
@@ -2376,3 +2376,583 @@ packages.\n\
 Now get that\n\
 package to\n\
 the castle!!!"))
+
+DEFINE_DIALOG(DIALOG_187, 1, 4, 30, 200, _("\
+Oh hey Mario!\n\
+\n\
+\n\
+\n\
+Am I glad to see\n\
+you!\n\
+\n\
+\n\
+As a Toad completely\n\
+unassociated with\n\
+the castle, \n\
+\n\
+I just so happened\n\
+to be taking an\n\
+evening stroll\n\
+in the general area\n\
+and now I come\n\
+across you!\n\
+\n\
+\n\
+THE Super Mario!\n\
+\n\
+\n\
+\n\
+It's honestly such\n\
+an honour to\n\
+finally meet you.\n\
+\n\
+Now that I've got\n\
+you right where I\n\
+want you,\n\
+\n\
+there's been\n\
+something I've been\n\
+wanting to get off\n\
+my chest.\n\
+I took a trip to\n\
+Shroomart a few days\n\
+ago,\n\
+\n\
+and I happened to\n\
+come across\n\
+\n\
+\n\
+you'll never guess\n\
+\n\
+\n\
+\n\
+LUIGI\n\
+\n\
+\n\
+\n\
+Its crazy!!!\n\
+\n\
+\n\
+\n\
+I meet the brother\n\
+of the famous\n\
+Mario\n\
+\n\
+and days later\n\
+I happen to meet\n\
+MARIO\n\
+\n\
+such a small\n\
+world we live\n\
+in!\n\
+\n\
+it's almost as\n\
+if there are\n\
+only like\n\
+\n\
+i dont know...\n\
+\n\
+\n\
+\n\
+4 or 5 areas to\n\
+walk around in\n\
+\n\
+\n\
+but did you know\n\
+how talkative your\n\
+brother is?\n\
+\n\
+he is such a\n\
+chatterbox\n\
+\n\
+\n\
+I just wanted\n\
+to make a quick\n\
+stop at Shroomart\n\
+\n\
+but then I bumped\n\
+into your brother\n\
+\n\
+\n\
+and we had such a\n\
+long conversation\n\
+\n\
+\n\
+some people man\n\
+\n\
+\n\
+\n\
+they really just\n\
+don't have any\n\
+respect for other\n\
+people's time\n\
+it is especially\n\
+annoying when\n\
+these things\n\
+happen\n\
+when you are\n\
+in a rush to\n\
+get something\n\
+done\n\
+But seriously,\n\
+have you seen\n\
+\n\
+\n\
+how absolutely\n\
+massive this\n\
+castle is?\n\
+\n\
+I dont even\n\
+know what I would\n\
+do with all\n\
+the extra space\n\
+can you imagine\n\
+how long that\n\
+would take to\n\
+clean?\n\
+it has to be\n\
+at least 3-5\n\
+business days\n\
+\n\
+you know, I just\n\
+cleaned my\n\
+own house\n\
+yesterday\n\
+thats actually\n\
+why I went\n\
+to shroomart\n\
+\n\
+I had to\n\
+buy a mop\n\
+\n\
+\n\
+and a step\n\
+ladder of all\n\
+things\n\
+\n\
+you know they\n\
+only make mops\n\
+for taller\n\
+people?\n\
+cleaning my\n\
+house was\n\
+awful\n\
+\n\
+constantly\n\
+going up\n\
+\n\
+\n\
+and down\n\
+\n\
+\n\
+\n\
+and up\n\
+\n\
+\n\
+\n\
+and down\n\
+\n\
+\n\
+\n\
+and back up\n\
+\n\
+\n\
+\n\
+only to drop\n\
+the mop\n\
+\n\
+\n\
+and have to\n\
+go back down\n\
+\n\
+\n\
+then back up\n\
+\n\
+\n\
+\n\
+all day!\n\
+\n\
+\n\
+\n\
+it was such\n\
+a chore\n\
+\n\
+\n\
+but shroomart is\n\
+such a good\n\
+place to buy\n\
+things\n\
+for example\n\
+\n\
+\n\
+\n\
+the mop i\n\
+bought is\n\
+super durable\n\
+\n\
+i had to have\n\
+dropped it\n\
+at least six\n\
+times\n\
+maybe even\n\
+seven\n\
+\n\
+\n\
+I was not\n\
+keeping count\n\
+\n\
+\n\
+speaking of\n\
+counting\n\
+\n\
+\n\
+have you seen\n\
+how much time\n\
+you've spent\n\
+talking to me?\n\
+must be getting\n\
+pretty high at\n\
+this point\n\
+\n\
+look at that\n\
+timer go\n\
+\n\
+\n\
+I should plan\n\
+another trip\n\
+to Shroomart\n\
+\n\
+I hear they\n\
+swapped out the\n\
+plastic bags for\n\
+recyclable ones!\n\
+shroomart is\n\
+really looking\n\
+out for the\n\
+environment\n\
+it's so awesome\n\
+\n\
+\n\
+\n\
+however, that\n\
+thing I wanted\n\
+to ask you about\n\
+\n\
+do you ever\n\
+feel\n\
+\n\
+\n\
+like a\n\
+plastic bag?\n\
+\n\
+\n\
+drifting through\n\
+the wind?\n\
+\n\
+\n\
+wanting to\n\
+start again?\n\
+\n\
+\n\
+do you\n\
+ever feel?\n\
+\n\
+\n\
+so paper\n\
+thin?\n\
+\n\
+\n\
+like a house\n\
+of cards?\n\
+\n\
+\n\
+one blow\n\
+from cavin\n\
+in?\n\
+\n\
+sometimes life\n\
+just hits\n\
+different man\n\
+\n\
+sometimes\n\
+\n\
+\n\
+\n\
+you just gotta\n\
+ignite the\n\
+light\n\
+\n\
+and let\n\
+it shine\n\
+\n\
+\n\
+just own\n\
+the night\n\
+\n\
+\n\
+kinda like\n\
+the Fourth\n\
+of July\n\
+\n\
+Cause Mario,\n\
+\n\
+\n\
+\n\
+I'm going to\n\
+Shroomart\n\
+tomorrow\n\
+\n\
+You need\n\
+anything?\n\
+\n\
+\n\
+I decided\n\
+I'm going\n\
+tomorrow\n\
+\n\
+since I really\n\
+need restock\n\
+on kelpo\n\
+\n\
+my favorite\n\
+cereal brand\n\
+\n\
+\n\
+really makes\n\
+me feel like\n\
+a firework\n\
+\n\
+it serves as\n\
+a nice warm\n\
+way to start\n\
+your day!\n\
+but sometimes\n\
+I'm not feeling\n\
+the heat of\n\
+kelpo\n\
+sometimes I\n\
+like to be\n\
+nice and cold\n\
+\n\
+on those hot\n\
+summer\n\
+mornings\n\
+\n\
+but there are\n\
+times when\n\
+I'm hot AND\n\
+cold\n\
+kinda like\n\
+shroomart\n\
+\n\
+\n\
+My brother\n\
+Toadington\n\
+always tells me\n\
+\n\
+You're hot\n\
+then you're\n\
+cold\n\
+\n\
+You're yes,\n\
+then you're\n\
+no\n\
+\n\
+You're in,\n\
+then you're\n\
+out\n\
+\n\
+You're up,\n\
+then you're\n\
+down\n\
+\n\
+Reminds me\n\
+that sometimes\n\
+I should\n\
+really sit down\n\
+and just enjoy\n\
+the kelpo\n\
+\n\
+\n\
+You know this\n\
+has been really\n\
+nice\n\
+\n\
+You know\n\
+what else\n\
+is nice?\n\
+\n\
+You've pressed\n\
+the A button\n\
+at least\n\
+\n\
+uh...\n\
+\n\
+\n\
+\n\
+108 times\n\
+\n\
+\n\
+\n\
+That is half\n\
+as many times\n\
+\n\
+\n\
+as I have\n\
+gone to\n\
+Shroomart!\n\
+\n\
+which is\n\
+pretty poggers\n\
+\n\
+\n\
+if i do\n\
+say say\n\
+myself\n\
+\n\
+Shroomart is\n\
+also pretty\n\
+nice\n\
+\n\
+I'm glad that\n\
+you talk just\n\
+as much as\n\
+Luigi\n\
+Sometimes\n\
+it's nice\n\
+to just\n\
+\n\
+enjoy the\n\
+outside\n\
+weather\n\
+\n\
+and converse\n\
+with a friend\n\
+\n\
+\n\
+Thanks for\n\
+taking the\n\
+time to chat\n\
+\n\
+and for you\n\
+button mashers\n\
+\n\
+\n\
+STOP PRESSING A\n\
+THIS IS IMPORTANT\n\
+STOP PRESSING A\n\
+THIS IS IMPORTANT\n\
+STOP PRESSING A\n\
+THIS IS IMPORTANT\n\
+STOP PRESSING A\n\
+THIS IS IMPORTANT\n\
+STOP PRESSING A\n\
+THIS IS IMPORTANT\n\
+STOP PRESSING A\n\
+THIS IS IMPORTANT\n\
+...\n\
+\n\
+\n\
+\n\
+...\n\
+\n\
+\n\
+\n\
+...\n\
+\n\
+\n\
+\n\
+I hate you\n\
+\n\
+\n\
+"))
+
+DEFINE_DIALOG(DIALOG_188, 1, 4, 30, 200, _("\
+Wake up Mario!\n\
+Chief of Utilities\n\
+and Managerial\n\
+Supervisor\n\
+T. Whomp\n\
+\n\
+\n\
+\n\
+sent me to\n\
+give you a\n\
+message...\n\
+\n\
+We just got an\n\
+order from the\n\
+Princess' Castle\n\
+marked as URGENT!!!\n\
+Mario, this is the\n\
+delivery of a\n\
+lifetime,\n\
+\n\
+and as the top\n\
+performing employee at\n\
+U.P.P.I.E.S,\n\
+\n\
+you need to get\n\
+down to the post\n\
+office and deliver\n\
+that package ASAP!\n\
+I don't care if it's\n\
+Sunday night and\n\
+U.P.P.I.E.S. employees\n\
+have the day off.\n\
+This package must be\n\
+for the princess and\n\
+it has to get there\n\
+TONIGHT!!!\n\
+Oh, and by the way,\n\
+according to\n\
+U.P.P.I.E.S. policy,\n\
+\n\
+I can't pay you for\n\
+this job, and if you\n\
+don't do it I will\n\
+have to fire you...\n\
+But that shouldn't\n\
+be a problem.\n\
+Now get to it!\n\
+\n\
+Oh, and for legal\n\
+reasons I absolutely\n\
+did not break into\n\
+your house."))
+
+DEFINE_DIALOG(DIALOG_189, 1, 4, 30, 200, _("\
+I see you got\n\
+the package!\n\
+Now to make the\n\
+delivery!\n\
+This would normally\n\
+be the time I give\n\
+you the keys to the\n\
+delivery truck,\n\
+but Luigi got into\n\
+an accident\n\
+last Friday\n\
+\n\
+so you are going\n\
+to have to make\n\
+the delivery by\n\
+foot. Good Luck!"))
+
+DEFINE_DIALOG(DIALOG_190, 1, 4, 30, 200, _("\
+Man I hate the\n\
+timer that shows\n\
+up when I'm making\n\
+a delivery.\n\
+You know?\n\
+The one in the\n\
+top right corner\n\
+of your vision?\n\
+It seriously\n\
+stresses me out!\n\
+\n\
+\n\
+I breathe a real sigh\n\
+of relief once I talk\n\
+to the package recipient\n\
+and the timer stops."))

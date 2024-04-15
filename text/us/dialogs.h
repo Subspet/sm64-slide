@@ -2952,3 +2952,24 @@ I breathe a real sigh\n\
 of relief once I talk\n\
 to the package recipient\n\
 and the timer stops."))
+
+DEFINE_DIALOG(DIALOG_191, 1, 3, 30, 200, _("\
+I think Shroomart\n\
+forgot to label\n\
+this one..."))
+
+DEFINE_DIALOG(DIALOG_192, 1, 2, 30, 200, _("\
+We eatin' good\n\
+tonight baby!"))
+
+DEFINE_DIALOG(DIALOG_193, 1, 3, 30, 200, _("\
+I have been stuck\n\
+here for THREE\n\
+weeks!\n\
+Please send help.\n\
+You'll do that\n\
+right?\n\
+Right?\n\
+\n\
+\n\
+Please?"))

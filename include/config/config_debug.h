@@ -12,7 +12,7 @@
 /**
  * Disables all debug options (except PUPPYPRINT).
  */
-// #define DISABLE_ALL
+#define DISABLE_ALL
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -22,7 +22,7 @@
  * Enables a comprehensive standalone profiler. Automatically enabled by PUPPYPRINT_DEBUG.
  * If not using PUPPYPRINT_DEBUG, press L + D-Pad Up to toggle the profiler.
  */
-#define USE_PROFILER
+//#define USE_PROFILER
 
 /**
  * -- TEST LEVEL --
@@ -40,7 +40,7 @@
 /**
  * Enables debug free move (D-pad up to enter, A to exit).
  */
-#define ENABLE_DEBUG_FREE_MOVE
+//#define ENABLE_DEBUG_FREE_MOVE
 
 /**
  * Enables a custom, enhanced performance profiler. (Enables PUPPYPRINT by default in config_safeguards).
@@ -93,4 +93,4 @@
 /**
  * Intentionally crash the game whenever a runtime assertion fails (also invoked by the DEBUG define in the Makefile).
  */
-#define DEBUG_ASSERTIONS
+//#define DEBUG_ASSERTIONS

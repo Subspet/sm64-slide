@@ -25,7 +25,7 @@ void bhv_HLaser_loop(void) {
         case (0): // stationary
             break;
         case (1): // y axis movement UP/DOWN
-            o->oPosY = o->oHomeY - (0 - (200 * sins(o->oTimer * 600)));
+            o->oPosY = o->oHomeY - (0 - (250 * sins(o->oTimer * 600)));
             break;
         case (2): // y axis movement UP/DOWN farther
             o->oPosY = o->oHomeY - (0 - (400 * -sins(o->oTimer * 600)));
@@ -34,7 +34,7 @@ void bhv_HLaser_loop(void) {
             o->oPosY = o->oHomeY - (0 - (400 * sins(o->oTimer * 600)));
             break;
         case (4): // y axis movement UP/DOWN opp
-            o->oPosY = o->oHomeY - (0 - (200 * -sins(o->oTimer * 600)));
+            o->oPosY = o->oHomeY - (0 - (250 * -sins(o->oTimer * 600)));
             break;
 		default:
             break;

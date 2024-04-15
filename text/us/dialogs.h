@@ -294,12 +294,13 @@ This key doesn't fit!\n\
 Maybe it's for the\n\
 basement..."))
 
-DEFINE_DIALOG(DIALOG_024, 1, 5, 95, 200, _("\
-You need Star power to\n\
-open this door. Recover a\n\
-Power Star from an enemy\n\
-inside one of the castle's\n\
-paintings."))
+DEFINE_DIALOG(DIALOG_024, 1, 4, 95, 200, _("\
+U.P.P.I.E.S is\n\
+closed for the\n\
+day. The door\n\
+is locked.\n\
+Maybe there's\n\
+another way in?"))
 
 DEFINE_DIALOG(DIALOG_025, 1, 4, 95, 200, _("\
 It takes the power of\n\
